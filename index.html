@@ -25,7 +25,7 @@
           <h3 class="nav__name">Đăng Xuân Quyền</h3>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About</a>
@@ -43,8 +43,11 @@
           </div>
         </div>
         <div class="nav__buttons">
+
+          <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
+
           <div class="nav__toggle" id="nav-toggle">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" ></i>
           </div>
         </div>
       </nav>
@@ -349,30 +352,57 @@
           </div>
 
           <div class="contact__email">
-            <h2 class="contact__title">
-              Gửi tin nhắn cho tôi
-            </h2>
+            <h2 class="contact__title">Gửi tin nhắn cho tôi</h2>
 
             <form action="" class="contact__form" id="contact-form">
               <div class="contact__group">
                 <div class="contact__box">
-                  <input type="text" name="user_name" id="name" class="contact__input" required placeholder="First Name ">
+                  <input
+                    type="text"
+                    name="user_name"
+                    id="name"
+                    class="contact__input"
+                    required
+                    placeholder="First Name "
+                  />
                   <label for="name" class="contact__label">First Name </label>
                 </div>
 
                 <div class="contact__box">
-                  <input type="email" name="user_email" id="email" class="contact__input" required placeholder="Email Address">
-                  <label for="email" class="contact__label">Email Address</label>
+                  <input
+                    type="email"
+                    name="user_email"
+                    id="email"
+                    class="contact__input"
+                    required
+                    placeholder="Email Address"
+                  />
+                  <label for="email" class="contact__label"
+                    >Email Address</label
+                  >
                 </div>
               </div>
 
               <div class="contact__box">
-                <input type="text" name="user_subject" id="subject" class="contact__input" required placeholder="Subject">
+                <input
+                  type="text"
+                  name="user_subject"
+                  id="subject"
+                  class="contact__input"
+                  required
+                  placeholder="Subject"
+                />
                 <label for="subject" class="contact__label">Subject</label>
               </div>
 
               <div class="contact__box contact__area">
-                <textarea name="user_message" id="messeage" class="contact__input" required placeholder="Message"></textarea>
+                <textarea
+                  name="user_message"
+                  id="messeage"
+                  class="contact__input"
+                  required
+                  placeholder="Message"
+                ></textarea>
                 <label for="message" class="contact__label">Message</label>
               </div>
 
@@ -385,13 +415,15 @@
           </div>
 
           <div class="contact__social">
-            <img src="./img/curved-arrow.svg" alt="" class="contact__social-arrow">
-            
+            <img
+              src="./img/curved-arrow.svg"
+              alt=""
+              class="contact__social-arrow"
+            />
+
             <div class="contact__social-data">
               <div class="">
-                <p class="contact__social-description-1">
-                  Không gửi email
-                </p>
+                <p class="contact__social-description-1">Không gửi email</p>
                 <p class="contact__social-description-2">
                   Viết cho tôi trên các mạng xã hội của tôi
                 </p>
@@ -418,13 +450,34 @@
 
     <footer class="footer">
       <div class="footer__container container gird">
-        
+        <ul class="footer__links">
+          <li>
+            <a href="#about" class="footer__link">About</a>
+          </li>
+
+          <li>
+            <a href="#services" class="footer__link">Services</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="footer__link">Projects</a>
+          </li>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; All Rights Reserved By
+          <a href="#">DXQuyen.</a>
+        </span>
       </div>
     </footer>
 
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
     <!-- EMAIL JS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
 
     <script src="./main.js"></script>
   </body>
